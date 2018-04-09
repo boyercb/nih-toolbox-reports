@@ -1,1 +1,6 @@
-*.html
+# Archive Folder
+example/archive/
+
+# PDF outputs
+*.pdf 
+*.zip
