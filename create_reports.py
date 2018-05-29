@@ -10,6 +10,7 @@ def clean_registry(df):
 	df['PIN'] = df.PIN.str.lower()
 	df['PIN'] = df.PIN.str.replace("cip", "")
 	df['record_number'] = "CIP" + df.PIN
+	df = df.drop_duplicates("PIN")
 	return df
 
 def clean_scores(df):
